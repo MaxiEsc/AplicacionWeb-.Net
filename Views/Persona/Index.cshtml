@@ -1,0 +1,35 @@
+﻿@model List<MVC_CRUD.Models.ViewModels.ListPersonaViewModels>
+@{
+    ViewBag.Title = "Mis datos";
+} 
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+    <a href="~/Persona/Nuevo" class="btn btn-primary">Nuevo</a>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <table>
+            <tr>
+                <th class="container">#</th>
+                <th class="container">Nombre</th>
+                <th class="container">Apellido</th>
+                <th class="container">Mail</th>
+            </tr>
+            @foreach(var ofElemento in Model)
+            {
+                <tr>
+                    <th class="container">@ofElemento.Id</th>
+                    <th class="container">@ofElemento.Nombre</th>
+                    <th class="container">@ofElemento.Apellido</th>
+                    <th class="container">@ofElemento.Correo</th>
+                    <th class="container">@ofElemento.Correo</th>
+                    <th><a class="btn btn-info" href="~/Persona/Editar/@ofElemento.Id">Editar</a>
+                     <a class="btn btn-danger" href="~/Persona/Eliminar/@ofElemento.Id">Eliminar</a></th>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

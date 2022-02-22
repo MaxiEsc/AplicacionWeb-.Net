@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CrudModelStoreContainer" CdmEntityContainer="CrudEntities">
+    <EntitySetMapping Name="persona">
+      <EntityTypeMapping TypeName="CrudModel.persona">
+        <MappingFragment StoreEntitySet="persona">
+          <ScalarProperty Name="idTabla" ColumnName="idTabla" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
